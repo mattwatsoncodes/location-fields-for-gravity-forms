@@ -363,7 +363,7 @@ class Choose_Location_Field extends \GF_Field {
 			$longitute = trim( $value[ $this->id . '.1' ] );
 	        $latitude  = trim( $value[ $this->id . '.2' ] );
 
-			return $latitude . ' ' . $longitute;
+			return $latitude . ' | ' . $longitute;
 	    } else {
 	        return $value;
 	    }
