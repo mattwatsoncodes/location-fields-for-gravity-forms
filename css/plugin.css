@@ -1,0 +1,22 @@
+
+/**
+ * The map
+ */
+.lffgf-map {
+	height: 400px;
+	width: 100%;
+	border: solid 1px #DDD;
+	box-sizing: border-box;
+}
+.lffgf-map img {
+	max-width: none;
+}
+
+/**
+ * The search box
+ *
+ * For some reason this is 40px too low
+ */
+.pac-container {
+	margin-top: -40px;
+}
