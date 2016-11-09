@@ -112,20 +112,21 @@ jQuery( document ).ready( function( $ ) {
 
 		/**
 		 * Check for postcode update if it is populated dynamically
+		 * This is handy if the postcode field is hidden
 		 */
-		if ( $('.lffgf-alternate-input').length > 0 ) {
-			var alternate_input_selector = $('.lffgf-alternate-input').val();
-			var alternate_input_value    = $( alternate_input_selector ).val();
-
-			function alternate_input_watch(){
-		        if ( $( alternate_input_selector ).val() !== alternate_input_value ) {
-					alternate_input_value = $( alternate_input_selector ).val();
-					$( alternate_input_selector ).trigger('blur');
-				}
-		        setTimeout( alternate_input_watch, 1000 );
-		    };
-		    alternate_input_watch();
-		}
+		// if ( $('.lffgf-alternate-input').length > 0 ) {
+		// 	var alternate_input_selector = $('.lffgf-alternate-input').val();
+		// 	var alternate_input_value    = $( alternate_input_selector ).val();
+		//
+		// 	function alternate_input_watch(){
+		//         if ( $( alternate_input_selector ).val() !== alternate_input_value ) {
+		// 			alternate_input_value = $( alternate_input_selector ).val();
+		// 			$( alternate_input_selector ).trigger('blur');
+		// 		}
+		//         setTimeout( alternate_input_watch, 1000 );
+		//     };
+		//     alternate_input_watch();
+		// }
 	}
 
 });
