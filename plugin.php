@@ -40,7 +40,12 @@ $plugin_options        = new Plugin_Options();
 $assets_controller     = new Assets_Controller( $plugin_options );
 $admin_notices         = new Admin_Notices( $plugin_options );
 $choose_location_field = new Choose_Location_Field();
-$main_controller       = new Main_Controller( $plugin_options, $assets_controller, $admin_notices, $choose_location_field );
+$main_controller       = new Main_Controller(
+	$plugin_options,
+	$assets_controller,
+	$admin_notices,
+	$choose_location_field
+);
 
 // Run the Plugin
 $main_controller->run();

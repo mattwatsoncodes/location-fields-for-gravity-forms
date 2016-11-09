@@ -107,7 +107,6 @@ jQuery( document ).ready( function( $ ) {
 						}
 					});
 				});
-				$( alternate_input_selector ).bind( 'change', function() { alert('changed'); })
 			}
 		}
 
@@ -129,4 +128,4 @@ jQuery( document ).ready( function( $ ) {
 		}
 	}
 
-} );
+});
