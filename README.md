@@ -1,6 +1,6 @@
 # Location Fields for Gravity Forms
 
-Location Fields designed to work with Gravity Forms
+Location Fields designed to work with Gravity Forms (Beta)
 
 ## Purpose
 
